@@ -54,5 +54,8 @@ console.log(person(4));
 var firstArray = ["sexy","awful","gross","gorgeous","enormous"];
 var secondArray = ["pancakes","handcuffs","carousels","toast","giraffes"];
 
-var randomIndex = (firstArray.random() + " " + secondArray.random());
-console.log(randomIndex);
+var randomIndex1 = Math.floor( Math.random() * firstArray.length );
+var randomIndex2 = Math.floor( Math.random() * secondArray.length );
+//console.log(randomIndex);
+
+console.log(firstArray[randomIndex1] + " " + secondArray[randomIndex2]);
